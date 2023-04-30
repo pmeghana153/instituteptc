@@ -13,14 +13,13 @@ namespace DbExample.Services
 		
         private readonly string _connectionString;
         private readonly SqlHelper sqlHelper;
-		int counter=0;
+		int i;
         public StudentService(string connectionString)
         {
             sqlHelper=new SqlHelper(connectionString);
         }
         public void AddStudent(Student student)
         {
-			counter++;
             string Query = "insert into student(roll,s_name,DOB,Course) values(@roll,@s_name,@DOB,@Course)";
 
             SqlParameter[] sqlParameters = new SqlParameter[4];
