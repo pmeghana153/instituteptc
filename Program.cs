@@ -11,7 +11,9 @@ namespace DbExample
     {
         static void Main(string[] args)
         {
-            string ConnectionString = "Data Source=DESKTOP-IM0V93L\\SQLEXPRESS;Integrated Security=True;database=institute";
+            
+			
+			string ConnectionString = "Data Source=DESKTOP-IM0V93L\\SQLEXPRESS;Integrated Security=True;database=institute";
             StudentService studentService = new StudentService(ConnectionString);
 
             //////Student student = new Student();
